@@ -1,0 +1,243 @@
+#   Theme:    Purplecurve
+#   Author:   nvo (http://daath.tk)
+#   License:  GPL-2
+#
+#   Based on Bluecurve (http://git.fedorahosted.org/git/bluecurve-gtk-themes)
+#   Depend on Bluecurve GTK-2 engine
+
+gtk-icon-theme-name="Purplecurve"
+gtk-icon-sizes = "panel=14,14 : gtk-menu=14,14 : gtk-button=1,1"
+
+style "bluecurve-default"
+{
+    GtkContainer     ::border_width          = 0
+
+    GtkEntry         ::inner-border          = { 1, 1, 1, 1 }
+
+    GtkButton        ::child-displacement-x  = 0
+    GtkButton        ::child-displacement-y  = 0
+    GtkButton        ::default-border        = { 1, 1, 1, 1 }
+    GtkButton        ::default-outside-border= { 0, 0, 0, 0 }
+    GtkButton        ::interior-focus        = 0
+    GtkButton        ::focus-padding         = 0
+    GtkButton        ::focus-line-width      = 0
+    GtkButton        ::focus-line-height     = 0
+    GtkButton        ::inner-border          = { 0, 0, 0, 0 }
+
+    GtkButtonBox     ::child_min_width       = 0
+    GtkButtonBox     ::child_min_heigth      = 0
+    GtkButtonBox     ::child_internal_pad_x  = 0
+    GtkButtonBox     ::child_internal_pad_y  = 0
+
+    GtkPaned         ::handle-size           = 5
+    
+    GtkScale         ::slider-length         = 20
+    GtkScale         ::trough-side-details   = 0
+    GtkScale         ::value_spacing         = 0
+    
+    GtkRange         ::trough_border         = 0
+    GtkRange         ::slider_width          = 10
+    GtkPaned         ::handle_size           = 3
+    GtkRange         ::stepper_size          = 0
+    
+    GtkScrollbar     ::min-slider-length     = 30
+    GtkScrollbar     ::has-backward-stepper  = 0
+    GtkScrollbar     ::has-forward-stepper   = 0
+    
+    GtkScrolledWindow::scrollbar_spacing     = 0
+    
+    GtkExpander      ::expander-size         = 0
+    GtkExpander      ::expander_spacing      = 0
+    
+    GtkTreeView      ::expander-size         = 9
+    GtkTreeView      ::vertical-separator    = 0
+    GtkTreeView      ::horizontal-separator  = 0
+    GtkTreeView      ::expander-indent       = 0
+    GtkTreeView      ::horizontal-separator  = 0
+    GtkTreeView      ::focus-line-width      = 0
+    GtkTreeView      ::spacing               = 0
+    GtkTreeView      ::row-ending-details    = 0
+    GtkTreeView      ::treeview-left         = 1
+    GtkTreeView      ::treeview-right        = 0
+    GtkTreeView      ::treeview-middle       = 0
+    GtkTreeView      ::passive_focus         = 0
+    GtkTreeView      ::separator-height      = 0
+    GtkTreeView      ::tree-line-pattern     = "\001\001"
+    GtkTreeView      ::grid-line-pattern     = "\001\001"
+    GtkTreeView      ::grid-line-width       = 0
+    GtkTreeView      ::tree-line-width       = 0
+    
+    GtkToolbar       ::internal-padding      = 0
+    GtkToolbar       ::space-size            = 0
+    
+    GtkMenu          ::horizontal-padding    = 0
+    GtkMenu          ::vertical-padding      = 0
+    
+    GtkMenuBar       ::internal-padding      = 0
+    
+    GtkMenuItem      ::selected_shadow_type  = out
+    
+    #GtkOptionMenu    ::indicator-size        = 0
+    #GtkOptionMenu    ::indicator-spacing     = 0
+    
+    GtkRadioButton   ::indicator-size        = 12
+    
+    GtkCheckMenuItem ::indicator-size        = 12
+    
+    GtkCheckButton   ::indicator-size        = 12
+    GtkCheckButton   ::indicator-spacing     = 1
+    
+    GtkRadioButton   ::indicator-spacing     = 1
+    
+    GtkComboBox      ::appears-as-list       = 0
+    GtkComboBox      ::arrow-size            = 5
+    
+    GtkNotebook      ::tab-border            = 0
+    GtkNotebook      ::tab-hborder           = 0
+    GtkNotebook      ::tab-vborder           = 0
+    GtkNotebook      ::show-border           = 0
+    GtkNotebook      ::gtk-button-images     = 0
+    GtkNotebook      ::gtk-menu-images       = 0
+    GtkNotebook      ::arrow-spacing         = 0
+    GtkNotebook      ::tab-curvature         = 0
+    GtkNotebook      ::tab-overlap           = 0
+    GtkNotebook      ::focus-line-width      = 0
+
+    GtkComboBox      ::appears-as-list       = 1    # отображене больших списков со скроллбаром
+    
+    GtkWidget        ::link-color            = "#0000aa"
+    GtkWidget        ::visited-link-color    = "#7575aa"
+    GtkWidget        ::interior-focus        = 0
+    GtkWidget        ::focus-padding         = 0
+
+    bg[NORMAL]        = "#e6e6e6"
+    bg[ACTIVE]        = "#b3b3b3"
+    bg[PRELIGHT]      = "#505075"
+    bg[SELECTED]      = "#505075"
+    bg[INSENSITIVE]   = "#e6e6e6"
+
+    fg[NORMAL]        = "#222222"
+    fg[ACTIVE]        = "#222222"
+    fg[PRELIGHT]      = "#f4f4f4"
+    fg[SELECTED]      = "#f4f4f4"
+    fg[INSENSITIVE]   = "#6c6c6c"
+
+    base[NORMAL]      = "#f4f4f4"
+    base[ACTIVE]      = "#c1c1e6"
+    base[PRELIGHT]    = "#505075"
+    base[SELECTED]    = "#505075"
+    base[INSENSITIVE] = "#e6e6e6"
+
+    text[NORMAL]      = "#222222"
+    text[ACTIVE]      = "#222222"
+    text[PRELIGHT]    = "#f4f4f4"
+    text[SELECTED]    = "#f4f4f4"
+    text[INSENSITIVE] = "#6c6c6c"
+
+    xthickness = 1
+    ythickness = 1
+    
+    engine "bluecurve" 
+    {
+        contrast = 1.0
+    }
+}
+
+style "bluecurve-wide" = "bluecurve-default"
+{
+    xthickness = 1
+    ythickness = 1
+}
+
+style "bluecurve-tasklist" = "bluecurve-default"
+{
+    xthickness = 1
+    ythickness = 0
+}
+
+style "bluecurve-menu" = "bluecurve-default"
+{
+    xthickness = 0
+    ythickness = 1
+    base[SELECTED] = "#505075"
+}
+
+style "bluecurve-menu-item" = "bluecurve-default"
+{
+    xthickness = 0
+    ythickness = 1 
+
+    fg[PRELIGHT]   = "#ffffff"
+    base[SELECTED] = "#505075"
+    text[PRELIGHT] = "#ffffff"
+
+}
+
+style "bluecurve-menu-itembar" = "bluecurve-default"
+{
+    xthickness = 1
+    ythickness = 1
+}
+
+style "bluecurve-tree" = "bluecurve-default"
+{
+    xthickness = 2
+    ythickness = 2
+}
+
+style "bluecurve-frame-title" = "bluecurve-default"
+{
+    fg[NORMAL] = "#404040"
+}
+
+style "bluecurve-panel" = "bluecurve-default"
+{
+    xthickness = 3
+    ythickness = 3
+}
+
+style "bluecurve-tooltips" = "bluecurve-default"
+{
+    xthickness = 4
+    ythickness = 4
+    bg[NORMAL] = { 1.0,1.0,0.75 }
+}
+
+style "bluecurve-progress" = "bluecurve-default"
+{
+    ythickness = 1
+    xthickness = 0
+    base[SELECTED] = "#777777"
+}
+
+style "bluecurve-checkradio" = "bluecurve-default"
+{
+    base[SELECTED] = "#6c6c6c"
+}
+
+style "bluecurve-button" = "bluecurve-default"
+{
+    bg[PRELIGHT] = "#d6d6e6"
+    fg[PRELIGHT] = "#222222"
+}
+
+class "GtkWidget" style "bluecurve-default"
+class "GtkButton" style "bluecurve-button"
+class "GtkFrame" style "bluecurve-wide"
+class "GtkMenu" style "bluecurve-menu"
+class "GtkMenuItem" style "bluecurve-menu-item"
+class "GtkProgressBar" style "bluecurve-progress"
+class "GtkRadioButton" style "bluecurve-checkradio"
+class "GtkCheckButton" style "bluecurve-checkradio"
+class "GtkEntry" style "bluecurve-wide"
+class "GtkCheckMenuItem" style "bluecurve-checkradio"
+widget_class "*.GtkButton.*" style "bluecurve-button"
+widget_class "*.<GtkMenuItem>.*" style "bluecurve-menu-item"
+widget_class "*.tooltips.*.GtkToggleButton" style "bluecurve-tasklist"
+widget_class "*.GtkTreeView.GtkButton" style "bluecurve-tree"
+widget_class "*.GtkCTree.GtkButton" style "bluecurve-tree"
+widget_class "*.GtkList.GtkButton" style "bluecurve-tree"
+widget_class "*.GtkCList.GtkButton" style "bluecurve-tree"
+widget_class "*.GtkFrame.GtkLabel" style "bluecurve-frame-title"
+widget_class "BasePWidget.GtkEventBox.GtkTable.GtkFrame" style "bluecurve-panel"
+widget "gtk-tooltips" style "bluecurve-tooltips"
